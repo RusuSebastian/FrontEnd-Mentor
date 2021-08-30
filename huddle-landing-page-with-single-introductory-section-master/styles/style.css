@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 35px;
+  height: 100%;
+  background: url("../images/bg-mobile.svg") no-repeat top;
+  background-size: contain;
+  background-color: rgba(103, 74, 174, 0.9);
+}
+
+body .logo {
+  width: 50%;
+}
+
+body section .mockups {
+  width: 100%;
+  margin: 50px 0;
+}
+
+body section .text {
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+}
+
+body section .text h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+body section .text p {
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0;
+}
+
+body section .text input {
+  background: white;
+  border: none;
+  padding: 10px 30%;
+  border-radius: 50px;
+  color: #674baf;
+  font-family: "Open Sans", sans-serif;
+}
+
+body .socials {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .socials .med {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+body .socials .med img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 5%;
+  }
+  body .logo {
+    width: 20%;
+    margin-bottom: 5%;
+  }
+  body section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body section .mockups {
+    -webkit-box-flex: 1.2;
+        -ms-flex: 1.2;
+            flex: 1.2;
+    margin: 0;
+  }
+  body section .text {
+    padding: 50px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: left;
+  }
+  body section .text h1 {
+    font-size: 3rem;
+  }
+  body section .text input {
+    padding: 20px 0;
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  body .socials {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body .socials .med {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

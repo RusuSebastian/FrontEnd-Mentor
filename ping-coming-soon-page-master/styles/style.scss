@@ -1,0 +1,115 @@
+$primary: hsl(223, 87%, 63%);
+$primary1: hsl(223, 100%, 88%);
+$primary2: hsl(354, 100%, 66%);
+$neutral: hsl(0, 0%, 59%);
+$neutral1: hsl(209, 33%, 12%);
+
+*,
+*::after,
+*::before {
+	font-family: "Libre Franklin", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	padding: 50px 25px;
+	.text {
+		text-align: center;
+		.logo {
+			width: 20%;
+		}
+		h2 {
+			margin: 40px 0 20px 0;
+			color: $neutral;
+			font-weight: 300;
+			span {
+				color: $neutral1;
+				font-weight: 700;
+			}
+		}
+		p {
+			font-size: 0.8rem;
+			color: $neutral1;
+		}
+	}
+	.dashboard {
+		width: 90%;
+		margin-left: 50%;
+		transform: translate(-50%);
+		display: block;
+	}
+	form {
+		margin: 30px 0 60px 0;
+		input {
+			width: 100%;
+			padding: 10px 40px;
+			border-radius: 50px;
+			border: 1px solid $primary1;
+		}
+		::placeholder {
+			color: $neutral;
+		}
+		input[type="submit"] {
+			margin-top: 10px;
+			color: white;
+			background-color: $primary;
+		}
+	}
+	.media {
+		margin: 160px 0 40px 0;
+		display: flex;
+		justify-content: center;
+		.medialogo {
+			width: 30px;
+			height: 30px;
+			background: white;
+			border: 1px solid rgba(66, 66, 66, 0.2);
+			border-radius: 50%;
+			position: relative;
+			margin-right: 10px;
+			img {
+				display: block;
+				position: absolute;
+				width: 60%;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				filter: invert(40%) sepia(59%) saturate(1370%) hue-rotate(202deg)
+					brightness(101%) contrast(91%);
+			}
+		}
+	}
+	p {
+		text-align: center;
+		color: $neutral;
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 800px) {
+	body {
+		padding: 8% 20%;
+		.text {
+			.logo {
+				width: auto;
+			}
+			h2 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.5rem;
+			}
+		}
+		form {
+			margin-bottom: 80px;
+			input {
+				padding: 20px 20px;
+				width: 70%;
+			}
+			input[type="submit"] {
+				width: 28%;
+			}
+		}
+	}
+}

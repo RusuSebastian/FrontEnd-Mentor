@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+
+  margin: 0;
+  background: hsl(233, 47%, 7%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 500px;
+  width: 600px;
+  padding: 50px 100px 60px 60px;
+}
+.pic {
+  background: linear-gradient(
+      0deg,
+      hsl(277, 64%, 61%, 0.5),
+      hsl(277, 64%, 61%, 0.5)
+    ),
+    url("images/image-header-desktop.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+}
+.text {
+  background: hsl(244, 38%, 16%);
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+
+  /* padding: 50px 100px 60px 60px; */
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+}
+span {
+  color: hsl(277, 65%, 61%);
+}
+.bottomtext {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.textp {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 0;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: 100vh;
+    width: 375px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic {
+    order: -1;
+    height: 20vh;
+    width: 85vw;
+    border-radius: 10px 10px 0 0;
+  }
+  .text {
+    width: 85vw;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .bottomtext {
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}

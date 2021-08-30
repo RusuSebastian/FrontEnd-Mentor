@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background: #e5eff5;
+}
+
+body .section {
+  padding: 50px 30px;
+}
+
+body .section .top {
+  padding: 30px 20px;
+  line-height: 1.6;
+  background: white;
+  border-radius: 5px 5px 0 0;
+}
+
+body .section .top h5 {
+  color: #2ab2af;
+  font-size: 1.2rem;
+}
+
+body .section .top h6 {
+  color: #c0df34;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+body .section .top p {
+  color: #98a6bd;
+  font-size: 0.9rem;
+}
+
+body .section .mid {
+  padding: 30px 20px;
+  background: #2ab2af;
+  color: white;
+}
+
+body .section .mid h5 {
+  font-size: 1.2rem;
+}
+
+body .section .mid h6 {
+  margin: 20px 0 10px 0;
+  font-size: 1rem;
+}
+
+body .section .mid h6 span {
+  font-size: 2rem;
+}
+
+body .section .mid p {
+  color: #98a6bd;
+  font-size: 0.9rem;
+  color: white;
+}
+
+body .section .mid input[type="submit"] {
+  width: 100%;
+  background: #c0df34;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 15px 0px;
+  margin-top: 30px;
+}
+
+body .section .bot {
+  color: white;
+  background: #45d3d1;
+  padding: 30px 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+body .section .bot h5 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+body .section .bot p {
+  font-size: 0.9rem;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px 20%;
+  }
+  body .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .section .top {
+    width: 100%;
+  }
+  body .section .mid {
+    width: 50%;
+    border-radius: 0px 0px 0px 5px;
+  }
+  body .section .bot {
+    width: 50%;
+    border-radius: 0px 0px 5px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

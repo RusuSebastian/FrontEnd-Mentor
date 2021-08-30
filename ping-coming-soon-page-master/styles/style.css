@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  font-family: "Libre Franklin", sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 50px 25px;
+}
+
+body .text {
+  text-align: center;
+}
+
+body .text .logo {
+  width: 20%;
+}
+
+body .text h2 {
+  margin: 40px 0 20px 0;
+  color: #969696;
+  font-weight: 300;
+}
+
+body .text h2 span {
+  color: #151f29;
+  font-weight: 700;
+}
+
+body .text p {
+  font-size: 0.8rem;
+  color: #151f29;
+}
+
+body .dashboard {
+  width: 90%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: block;
+}
+
+body form {
+  margin: 30px 0 60px 0;
+}
+
+body form input {
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 1px solid #c2d3ff;
+}
+
+body form ::-webkit-input-placeholder {
+  color: #969696;
+}
+
+body form :-ms-input-placeholder {
+  color: #969696;
+}
+
+body form ::-ms-input-placeholder {
+  color: #969696;
+}
+
+body form ::placeholder {
+  color: #969696;
+}
+
+body form input[type="submit"] {
+  margin-top: 10px;
+  color: white;
+  background-color: #4f7df3;
+}
+
+body .media {
+  margin: 160px 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .media .medialogo {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 1px solid rgba(66, 66, 66, 0.2);
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+
+body .media .medialogo img {
+  display: block;
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: invert(40%) sepia(59%) saturate(1370%) hue-rotate(202deg) brightness(101%) contrast(91%);
+          filter: invert(40%) sepia(59%) saturate(1370%) hue-rotate(202deg) brightness(101%) contrast(91%);
+}
+
+body p {
+  text-align: center;
+  color: #969696;
+  font-size: 12px;
+}
+
+@media (min-width: 800px) {
+  body {
+    padding: 8% 20%;
+  }
+  body .text .logo {
+    width: auto;
+  }
+  body .text h2 {
+    font-size: 3rem;
+  }
+  body .text p {
+    font-size: 1.5rem;
+  }
+  body form {
+    margin-bottom: 80px;
+  }
+  body form input {
+    padding: 20px 20px;
+    width: 70%;
+  }
+  body form input[type="submit"] {
+    width: 28%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
